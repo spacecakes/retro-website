@@ -1,0 +1,45 @@
+body {
+  background-image: url("../assets/terrible-background-tile.jpg");
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+}
+* {
+  border: 2px solid blue;
+}
+.netscape-logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.section {
+  margin: 20px 0 20px 0;
+}
+.section:first-of-type {
+  margin-top: 70px;
+}
+
+.gif,
+.headline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.headline {
+  margin: 0 10px 0 10px;
+}
+.beautiful-man {
+  display: block;
+  margin: 50px auto 10px auto;
+  border: 5px ridge rgba(211, 211, 211, 0.5);
+}
+
+.line {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.under-construction {
+  width: 390px;
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+}
