@@ -29,9 +29,9 @@ p {
   font-size: 1.3em;
 }
 
-.gif,
 h1,
 h2,
+.gif,
 .contact p {
   display: inline-block;
   vertical-align: middle;
@@ -41,9 +41,6 @@ h2,
 }
 .contact.gif {
   height: 30px;
-}
-.contact p {
-  display: inline-block;
 }
 
 .beautiful-man {
@@ -81,6 +78,11 @@ ul {
 li {
   border: 5px ridge rgba(0, 0, 0, 0.4);
   line-height: 2;
+}
+.counter,
+.pig {
+  display: block;
+  margin: auto;
 }
 footer {
   padding: 20px;
