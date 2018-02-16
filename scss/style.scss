@@ -4,21 +4,23 @@ body {
   margin: 0;
   text-align: center;
 }
+
 .netscape-logo {
   position: fixed;
   top: 5px;
   right: 5px;
 }
 .site-wrapper {
-  width: 420px;
+  max-width: 420px;
   margin: auto;
 }
 .section {
   margin: 20px 0 20px 0;
+  overflow: hidden;
 }
 h1,
 h2 {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Marker Felt", sans-serif;
 }
 p {
   font-size: 1.3em;
@@ -46,8 +48,7 @@ h2,
   margin: auto;
   border: 5px ridge rgba(0, 0, 0, 0.4);
 }
-.line,
-.links {
+.warning-tape {
   display: block;
   margin: 0 auto 0 auto;
 }
@@ -58,13 +59,14 @@ h2,
 }
 
 .marquee p {
-  font-weight: bold;
-  transform: translateX(100%);
-  animation: marquee 5s linear infinite;
   position: absolute;
+  font-weight: bold;
   width: 100%;
   margin: 0;
   line-height: 50px;
+  transform: translateX(100%);
+  animation: marquee 5s linear infinite;
+  animation-timing-function: steps(40);
 }
 ul {
   list-style: none;
