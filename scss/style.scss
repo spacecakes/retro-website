@@ -29,6 +29,9 @@ p {
   font-size: 1.3em;
 }
 
+a > span {
+  display: none;
+}
 h1,
 h2,
 .gif,
@@ -94,5 +97,34 @@ footer {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background: white;
+  }
+  .netscape-logo,
+  .gif,
+  .site-wrapper > h2,
+  .under-construction {
+    display: none;
+  }
+
+  h1 {
+    color: black;
+  }
+  h1,
+  h2 {
+    font-family: serif;
+  }
+  a > span {
+    display: inline;
+  }
+  p {
+    font-size: 1em;
+  }
+  li {
+    border: 3px solid black;
   }
 }
