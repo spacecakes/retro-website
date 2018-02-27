@@ -1,5 +1,5 @@
 body {
-  background-image: url("../assets/terrible-background-tile.jpg");
+  background: url("../assets/terrible-background-tile.jpg");
   background-attachment: fixed;
   margin: 0;
   text-align: center;
@@ -131,9 +131,12 @@ footer {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   body {
     background: white;
+    color: black;
+    font-family: "VT323", monospace;
+    font-size: 2em;
   }
   .netscape-logo,
   .gif,
@@ -141,26 +144,22 @@ footer {
   .under-construction {
     display: none;
   }
-  h1,
-  h2,
-  p,
-  a,
-  li,
-  span {
-    color: black;
-    font-family: "VT323", monospace;
-    font-size: 1.2em;
-  }
-  li {
-    padding: 5px;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  a > span {
-    display: block;
-  }
-  li {
-    border: 3px solid black;
-  }
+}
+
+li {
+  padding: 5px;
+}
+
+h1 {
+  font-family: "VT323", monospace;
+  font-size: 2em;
+  color: black;
+}
+
+a > span {
+  display: block;
+}
+
+li {
+  border: 3px solid black;
 }

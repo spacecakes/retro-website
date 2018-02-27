@@ -6,7 +6,7 @@ document.onload = () => {
 // Change to WAP site at 200px width
 let image = document.getElementById("me");
 let headline = document.getElementById("headline");
-let windowWidth = window.matchMedia("(max-width: 300px)");
+let windowWidth = window.matchMedia("(max-width: 320px)");
 function mediaQuery(windowWidth) {
   if (windowWidth.matches) {
     image.src = "assets/me-wap.png";
