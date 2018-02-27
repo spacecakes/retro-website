@@ -17,5 +17,5 @@ function mediaQuery(windowWidth) {
   }
 }
 
-mediaQuery(windowWidth); // Call listener function at run time
-windowWidth.addListener(mediaQuery); // Attach listener function on state changes
+mediaQuery(windowWidth);
+windowWidth.addListener(mediaQuery);
