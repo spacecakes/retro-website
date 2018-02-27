@@ -141,18 +141,24 @@ footer {
   .under-construction {
     display: none;
   }
-  h1 {
-    color: black;
-  }
   h1,
-  h2 {
-    font-family: serif;
+  h2,
+  p,
+  a,
+  li,
+  span {
+    color: black;
+    font-family: "VT323", monospace;
+    font-size: 1.2em;
+  }
+  li {
+    padding: 5px;
+  }
+  h1 {
+    font-size: 3em;
   }
   a > span {
-    display: inline;
-  }
-  p {
-    font-size: 1em;
+    display: block;
   }
   li {
     border: 3px solid black;
