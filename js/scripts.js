@@ -19,8 +19,7 @@ function mediaQuery(windowWidth) {
 mediaQuery(windowWidth);
 windowWidth.addListener(mediaQuery);
 
-/* // I'm sorry for this. So sorry.
+// I'm sorry for this. So sorry.
 document.onload = () => {
   midi.play();
 };
- */
