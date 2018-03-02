@@ -4,7 +4,7 @@ const headline = document.getElementById("headline");
 const windowWidth = window.matchMedia("(max-width: 320px)");
 const midi = document.querySelector("audio");
 
-function mediaQuery(windowWidth) {
+function wap(windowWidth) {
   if (windowWidth.matches) {
     image.src = "assets/me-wap.png";
     headline.innerText = "Welcome to my WAP page";
@@ -16,8 +16,8 @@ function mediaQuery(windowWidth) {
   }
 }
 
-mediaQuery(windowWidth);
-windowWidth.addListener(mediaQuery);
+wap(windowWidth);
+windowWidth.addListener(wap);
 
 // I'm sorry for this. So sorry.
 document.onload = () => {
