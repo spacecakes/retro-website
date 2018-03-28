@@ -27,7 +27,7 @@ h2 {
   font-family: "Comic Sans MS", "Marker Felt", sans-serif;
 }
 p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 a > span {
@@ -60,29 +60,31 @@ h2,
   position: relative;
   overflow: hidden;
   height: 50px;
+  p {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    line-height: 50px;
+    transform: translateX(100%);
+    animation: marquee 5s linear infinite;
+    animation-timing-function: steps(40);
+    font-size: 1.2em;
+  }
 }
 
-.marquee p {
-  position: absolute;
-  font-weight: bold;
-  width: 100%;
-  margin: 0;
-  line-height: 50px;
-  transform: translateX(100%);
-  animation: marquee 5s linear infinite;
-  animation-timing-function: steps(40);
-}
 ul {
   list-style: none;
   display: inline-block;
   text-align: left;
   padding: 0;
   width: 100%;
+  li {
+    border: 5px ridge rgba(0, 0, 0, 0.4);
+    line-height: 2;
+  }
 }
-li {
-  border: 5px ridge rgba(0, 0, 0, 0.4);
-  line-height: 2;
-}
+
 .counter,
 .pig {
   display: block;
@@ -90,6 +92,9 @@ li {
 }
 footer {
   padding: 20px;
+  p:last-of-type {
+    font-size: 0.7em;
+  }
 }
 // Marquee animation
 @keyframes marquee {
